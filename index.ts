@@ -63,6 +63,7 @@ class CommandQueue {
      * @param command - The command object to add
      */
     public enqueue(command: Command): void {
+        this._queue.push(command);
         // TODO: Implement insertion logic.
         // Ensure HIGH priority items skip ahead of NORMAL priority items.
         // Ensure FIFO order is preserved within the same priority level.
